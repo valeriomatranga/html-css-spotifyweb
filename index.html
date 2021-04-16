@@ -24,53 +24,61 @@
     <!-- navbar -->
     <main>
 
-        <div class="section nav float-left d-flex flex-column">
-            <div class="logo">
-                <img src="./asset/img/logo.svg" alt="">
-            </div>
-            <div class="home d-flex align-items-center">
+        <div class="section nav float-left d-flex  justify-content-between">
+
+            <div class="nav_top">
+                <div class="logo">
+                    <img src="./asset/img/logo.svg" alt="">
+                </div>
+                <div class="home d-flex align-items-center">
                 <img class="icon" src="./asset/img/home.svg" alt="">
                 <a class="lnk" href="#">Home</a>
             </div>
+
             <div class="cerca d-flex align-items-center">
                 <img class="icon" src="./asset/img/search.svg" alt="">
                 <a class="lnk" href="#">Cerca</a>
             </div>
+            
             <div class="libreria d-flex align-items-center">
                 <img class="icon" src="./asset/img/libreria.svg" alt="">
                 <a class="lnk" href="#">La tua libreria</a>
             </div>
             
-
+            
             <h5 class="text-uppercase text-white">playlist</h5>
             <div class="crea d-flex align-items-center">
                 <div class="add d-flex align-items-center justify-content-center "><i class="fas fa-plus"></i></div>
                 <a class="lnk" href="#">Crea Playlist</a>
             </div>
+            
+            <div class="playlist d-flex flex-column">
+                <a class="lnk" href="#">Nome Playlist</a>
+                <a class="lnk" href="#">Nome Playlist</a>
+                <a class="lnk" href="#">Nome Playlist</a>
+                <a class="lnk" href="#">Nome Playlist</a>
+                <a class="lnk" href="#">Nome Playlist</a>
+                <a class="lnk" href="#">Nome Playlist</a>
+                <a class="lnk" href="#">Nome Playlist</a>
+            </div> 
 
-            <div class="playlist d-flex flex-column overflow-auto">
-                <a class="lnk" href="#">Nome Playlist</a>
-                <a class="lnk" href="#">Nome Playlist</a>
-                <a class="lnk" href="#">Nome Playlist</a>
-                <a class="lnk" href="#">Nome Playlist</a>
-                <a class="lnk" href="#">Nome Playlist</a>
-                <a class="lnk" href="#">Nome Playlist</a>
-                <a class="lnk" href="#">Nome Playlist</a>
+        </div>
+
+        <div class="nav_bottom d-flex flex-column justify-content-end ">
+
+            <div class="download d-flex align-items-center ">
+                <img class="icon_small" src="./asset/img/download.svg" alt="">
+            <a class="lnk" href="#">Installa app</a>
+            </div>
+            
+            <div class="utente d-flex align-items-center">
+                <div class="cerchio d-flex align-item-center justify-content-center ">
+                    <img class="icon_medium" src="./asset/img/profile.svg" alt="">
+                </div>
+                <a class="text-white" href="#">John Snow</a>
             </div>
 
-            <div class="nav_bottom">
-                <div class="download d-flex align-items-center">
-                    <img class="icon_small" src="./asset/img/download.svg" alt="">
-                <a class="lnk" href="#">Installa app</a>
-                </div>
-                
-                <div class="utente d-flex align-items-center">
-                    <div class="cerchio d-flex align-item-center justify-content-center ">
-                        <img class="icon_medium" src="./asset/img/profile.svg" alt="">
-                    </div>
-                    <a class="text-white" href="#">John Snow</a>
-                </div>
-            </div>
+        </div>
 
         </div>
         <!-- /navbar -->
@@ -99,7 +107,7 @@
                 <h2 class="text-white m-3">Recently played</h2>
             </div>
             
-            <div class="recenti row">
+            <div class="recenti row no-gutters">
                 <div class="card col-2 text-left text-center">
                   <img class="card-img-top" src="./asset/img/metal_lifting.jpg" alt="">
                   <div class="card-body">
@@ -155,7 +163,7 @@
                 <span class="text-secondary">Piu ascolti, piu accurati saranno i suggerimenti.</span>
             </div>
 
-            <div class="row">
+            <div class="row no-gutters">
                 <div class="card col-2 text-left text-center ">
                     <img class="card-img-top" src="./asset/img/radar.jpeg" alt="">
                     <div class="card-body">
@@ -176,7 +184,7 @@
                 <span class="text-secondary">Piu ascolti, piu accurati saranno i suggerimenti.</span>
             </div>
 
-            <div class="row">
+            <div class="row no-gutters">
                 <div class="card col-2 text-left text-center ">
                     <img class="card-img-top rounded-circle" src="./asset/img/youg.jpeg" alt="">
                     <div class="card-body">

@@ -1,11 +1,12 @@
-/* struttura */
+/************* struttura *************/
+
  .upgrade{
     height: 100px;
     width: 100%;
-    float: right;
     justify-content: flex-end;
     align-items: center;
-    padding: 0px 40px;
+    padding: 40px 40px;
+    background-color:rgba(8, 11, 18, 1) ;
 }
  
 .nav{
@@ -13,16 +14,15 @@
     height: calc(100vh - 100px);
     width: 200px;
     padding: 10px;
-    overflow-y: auto;
 }
 
 .video{
     background-color: rgb(20, 25, 34);
     height: calc(100vh - 100px);
     width: calc(100% - 200px);
-    float: right;
-    padding: 10px;
+    float:left;
     overflow-y: auto;
+    overflow-x: hidden;
 
 }
 
@@ -33,7 +33,7 @@
     position: fixed;
     bottom: 0;
 }
-/* /struttura */
+/*************** /struttura **************/
 
 
 /* upgrade */
@@ -43,12 +43,12 @@
     font-size: 0.8rem;
 
 }
-/* /upgrade */
+/************* /upgrade **************/
 
 
 
 
-/* navbar */
+/*************** navbar **************/
 .clearfix{
     display: block;
     content: "";
@@ -110,14 +110,14 @@
 }
 
 .playlist{
-    overflow-y:scroll;
-    z-index: 5;
+    height: 70%;
+    overflow-y: auto;
 }
-/* /navbar */
+/***************** /navbar ************/
 
 
 
-/* video */
+/************** video ************/
 li{
     display: inline-block;
     margin: 10px;
@@ -130,18 +130,18 @@ li{
     background-color: transparent;
     border: none;
     color: white;
-    padding-right: 0;
     margin-top: 25px;
+    padding: 10px!important;
 }
 
 .card-text{
     color:rgba(108, 108, 108, 1) ;
 }
-/* /video */
+/************** /video *************/
 
 
 
-/* controll */
+/************** controll ***********/
 .controll img{
     width: 50px;
     margin: 20px;
