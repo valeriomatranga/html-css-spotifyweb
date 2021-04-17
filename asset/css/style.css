@@ -1,26 +1,39 @@
 /************* struttura *************/
+.clearfix{
+    display: block;
+    content: "";
+    clear: both;
+}
 
  .upgrade{
     height: 100px;
-    width: 100%;
+    width: calc(100% - 250px);
     justify-content: flex-end;
     align-items: center;
-    padding: 40px 40px;
-    background-color:rgba(8, 11, 18, 1) ;
+    padding: 0px 25px;
+    background-color:rgba(0, 0, 0, 0.609);
+    position: absolute;
+    top: 0;
+    z-index: 1;
 }
  
 .nav{
     background-color: rgb(0, 0, 0);
     height: calc(100vh - 100px);
-    width: 200px;
+    width: 250px;
     padding: 10px;
+    flex-wrap: nowrap;
+    position: relative;
+   
 }
 
 .video{
     background-color: rgb(20, 25, 34);
     height: calc(100vh - 100px);
-    width: calc(100% - 200px);
+    width: calc(100% - 250px);
     float:left;
+    margin-bottom: 100px;
+    padding-top: 120px;
     overflow-y: auto;
     overflow-x: hidden;
 
@@ -36,11 +49,27 @@
 /*************** /struttura **************/
 
 
-/* upgrade */
+/************* upgrade ****************/
 .upg{
     border: 1px solid white;
-    padding: 7px 30px;
+    padding: 10px 50px;
+    font-size: 1rem;
+    font-weight: 500;
+
+}
+
+@media screen and (max-width:575px) {
+
+    .upgrade{
+    width: calc(100% - 60px);
+    padding: 0px 5px;
+    }
+
+    .btn{
+    padding: 7px 35px;
     font-size: 0.8rem;
+    font-weight: 600;
+    }
 
 }
 /************* /upgrade **************/
@@ -49,18 +78,12 @@
 
 
 /*************** navbar **************/
-.clearfix{
-    display: block;
-    content: "";
-    clear: both;
-}
-
 
 .logo{
-    width: 50px;
     width: 140px;
     margin: 20px 0px
 }
+
 .icon{
     width: 30px;
     margin: 10px 10px 10px 0;
@@ -68,7 +91,6 @@
 
 .icon_small{
     width: 15px;
-    margin: 10px 0;
     margin: 10px 10px 10px 0;
 }
 
@@ -98,7 +120,7 @@
     height: 23px;
     border-radius: 50%;
     background-color: rgba(108, 108, 108, 1);
-    margin: 10px 10px 10px 0;
+    margin-right: 10px;
 }
 
 .icon_medium{
@@ -107,42 +129,288 @@
 
 .utente{
     border-top: 1px solid rgba(108, 108, 108, 1);
+    padding: 10px 0;
 }
 
 .playlist{
-    height: 70%;
     overflow-y: auto;
+    flex-grow: 1;
+}
+
+.playlist>a{
+    display: inline-block;
+}
+
+.logo_small{
+    display: none;
+    width: 35px;
+}
+
+@media screen and (max-width:575px) {
+
+    .nav{
+        width: 60px;
+        align-items: center;
+    }
+    .logo{
+        display: none;
+    }
+    .logo_small{
+        display: block;
+    }
+    .nav img{
+        margin:10px 0;
+    }
+    .crea{
+        display: none!important;
+    }
+    .lnk{
+        display: none;
+    }
+    .nav h5{
+        display: none;
+    }
+    .playlist{
+        display: none;
+    }
+    .nav a{
+        display: none;
+    }
+    .cerchio{
+        margin: 0;
+    }
+    .nav_bottom{
+        position: absolute;
+        bottom: 10px;
+    }
 }
 /***************** /navbar ************/
 
 
 
 /************** video ************/
-li{
-    display: inline-block;
-    margin: 10px;
-    color: rgba(108, 108, 108, 1);
+.menu{
+    text-align: center;
+}
+
+.menu a{
+    color: gray;
+    font-size: 1rem;
     font-weight: 500;
+
+}
+
+.consigliati,
+.popolari,
+.recenti{
+    margin:15px 25px;
+}
+
+.row{
+    margin: 10px;
+}
+
+.cards{
+    width: 250px;
+    padding-left: 10px;
+    padding-right: 10px;
     cursor: pointer;
+    margin-bottom: 30px;
 }
 
-.card{
-    background-color: transparent;
-    border: none;
+.card_img{
+    width: 100%;
+    position: relative;
+}
+
+.play{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.card_img img{
+    width: 100%;
+}
+
+.play i{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 5rem;
+    color:transparent;
+}
+
+.card_bottom{
+    width: 100%;
+    text-align: center;
     color: white;
-    margin-top: 25px;
-    padding: 10px!important;
 }
 
-.card-text{
-    color:rgba(108, 108, 108, 1) ;
+.card_bottom h4{
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-top: 20px;
 }
+
+.card_bottom span{
+    color: gray;
+    font-weight: 500;
+}
+
+.tondo img,
+.tondo .play{
+    border-radius: 50%;
+}
+
+.cards:hover .play{
+    background-color: rgba(0, 0, 0, 0.527);
+}
+
+.cards:hover  i{
+ color: white;
+}
+
+@media screen and (max-width:575px) {
+
+    .video{
+    width: calc(100% - 60px);
+    }
+    .video h2{
+        font-size: 1.3rem;
+        margin-bottom: 0px;
+    }
+    .video h4{
+        font-size: 1rem;
+    }
+    .video span{
+        font-size: 0.8rem;
+    }
+    .cards{
+        margin-bottom: 5px;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+}
+
 /************** /video *************/
 
 
 
 /************** controll ***********/
+
+/* controll left */
 .controll img{
     width: 50px;
-    margin: 20px;
+    margin: 20px 10px 20px 0px;
 }
+
+.controll h5{
+    margin: 0px;
+}
+.controll span{
+    color: gray;
+}
+
+.cartella{
+    color: gray;
+    margin:0 25px;
+}
+.cartella i{
+    margin: 5px;
+}
+
+/* /controll left */
+
+/* controll center */
+.controll_center{
+    justify-content: center;
+    align-items: center;
+}
+.contr_small{
+    padding: 10px;
+    font-size: 1.1rem;
+}
+
+.row{
+    padding: 0;
+}
+.barra::before{
+    content: "0:25";
+}
+.contr_medium{
+    padding: 8px;
+    font-size: 1.5rem;
+}
+
+.contr_big{
+    font-size: 2rem;
+    padding: 10px 15px;
+}
+
+.barra{
+    width: 70%;
+    height: 4px;
+    background-color: gray;
+    margin: 20px;
+    border-radius: 4px;
+    position: relative;
+    cursor: pointer;
+}
+
+.progresso{
+    width: 20%;
+    height: 100%;
+    border-radius: 4px;
+    position: absolute;
+    top: 0;
+    background-color: white;
+}
+.cursore{
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+    justify-content: flex-end;
+    align-items: center;
+}
+.pallino{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+}
+
+.progresso:hover .cursore{
+    background-color:rgba(173, 255, 47, 1);
+
+}
+.progresso:hover .pallino{
+    background-color: white;
+
+}
+.controll .row{
+    margin: 0px;
+}
+.tempo{
+}
+/* /controll center */
+
+
+
+/* controll right */
+.controll_right{
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.controll_right>.barra{
+    width: 20%;
+}
+
+.controll_right i{
+    font-size: 0.9rem;
+}
+/* /controll right */

@@ -12,6 +12,7 @@
     <!-- bootstrap -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
         integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css">
     <!-- style css -->
     <link rel="stylesheet" href="./asset/css/style.css">
 </head>
@@ -24,135 +25,169 @@
     <!-- navbar -->
     <main>
 
-        <div class="section nav float-left d-flex  justify-content-between">
+        <div class="section nav float-left d-flex flex-column">
 
-            <div class="nav_top">
+                <div class="logo_small">
+                    <img src="./asset/img/logo-small.svg" alt="">
+                </div>
+
                 <div class="logo">
                     <img src="./asset/img/logo.svg" alt="">
                 </div>
-                <div class="home d-flex align-items-center">
-                <img class="icon" src="./asset/img/home.svg" alt="">
-                <a class="lnk" href="#">Home</a>
-            </div>
 
-            <div class="cerca d-flex align-items-center">
-                <img class="icon" src="./asset/img/search.svg" alt="">
-                <a class="lnk" href="#">Cerca</a>
-            </div>
-            
-            <div class="libreria d-flex align-items-center">
-                <img class="icon" src="./asset/img/libreria.svg" alt="">
-                <a class="lnk" href="#">La tua libreria</a>
-            </div>
-            
-            
-            <h5 class="text-uppercase text-white">playlist</h5>
-            <div class="crea d-flex align-items-center">
-                <div class="add d-flex align-items-center justify-content-center "><i class="fas fa-plus"></i></div>
-                <a class="lnk" href="#">Crea Playlist</a>
-            </div>
-            
-            <div class="playlist d-flex flex-column">
-                <a class="lnk" href="#">Nome Playlist</a>
-                <a class="lnk" href="#">Nome Playlist</a>
-                <a class="lnk" href="#">Nome Playlist</a>
-                <a class="lnk" href="#">Nome Playlist</a>
-                <a class="lnk" href="#">Nome Playlist</a>
-                <a class="lnk" href="#">Nome Playlist</a>
-                <a class="lnk" href="#">Nome Playlist</a>
-            </div> 
-
-        </div>
-
-        <div class="nav_bottom d-flex flex-column justify-content-end ">
-
-            <div class="download d-flex align-items-center ">
-                <img class="icon_small" src="./asset/img/download.svg" alt="">
-            <a class="lnk" href="#">Installa app</a>
-            </div>
-            
-            <div class="utente d-flex align-items-center">
-                <div class="cerchio d-flex align-item-center justify-content-center ">
-                    <img class="icon_medium" src="./asset/img/profile.svg" alt="">
+                <div class="home">
+                    <img class="icon" src="./asset/img/home.svg" alt="">
+                    <a class="lnk" href="#">Home</a>
                 </div>
-                <a class="text-white" href="#">John Snow</a>
-            </div>
+                
+                <div class="cerca">
+                    <img class="icon" src="./asset/img/search.svg" alt="">
+                    <a class="lnk" href="#">Cerca</a>
+                </div>
+                
+                <div class="libreria">
+                    <img class="icon" src="./asset/img/libreria.svg" alt="">
+                    <a class="lnk" href="#">La tua libreria</a>
+                </div>
+                
+                
+                <h5 class="text-uppercase text-white">playlist</h5>
+                <div class="crea d-flex align-items-center">
+                    <div class="add d-flex align-items-center justify-content-center "><i class="fas fa-plus"></i></div>
+                    <a class="lnk" href="#">Crea Playlist</a>
+                </div>
+                
+                <div class="playlist d-flex flex-column">
+                    <a class="lnk" href="#">Nome Playlist</a>
+                    <a class="lnk" href="#">Nome Playlist</a>
+                    <a class="lnk" href="#">Nome Playlist</a>
+                    <a class="lnk" href="#">Nome Playlist</a>
+                    <a class="lnk" href="#">Nome Playlist</a>
+                    <a class="lnk" href="#">Nome Playlist</a>
+                    <a class="lnk" href="#">Nome Playlist</a>
+                </div> 
 
-        </div>
+          
+                
+            <div class="nav_bottom">
+
+                <div class="download">
+                    <img class="icon_small" src="./asset/img/download.svg" alt="">
+                    <a class="lnk" href="#">Installa app</a>
+                </div>
+                
+                <div class="utente d-flex">
+                    <div class="cerchio d-flex justify-content-center align-items-center">
+                        <img class="icon_medium" src="./asset/img/profile.svg" alt="">
+                    </div>
+                    <a class="text-white" href="#">John Snow</a>
+                </div>
+
+            </div>    
+
 
         </div>
         <!-- /navbar -->
         
         <!-- video -->
-        <div class="section video d-flex flex-column">
-
-        <div class="section upgrade d-flex">
-            <div class="btn upg text-uppercase text-white rounded-pill">effettua l'upgrade</div>
-        </div>
-
-
-            <div class="menu flex-wrap row justify-content-center">
-                <ul>
-                    <li class="item text-uppercase"> in evidenza</li>
-                    <li class="item text-uppercase"> podcast</li>
-                    <li class="item text-uppercase">classifiche</li>
-                    <li class="item text-uppercase">generi e mood</li>
-                    <li class="item text-uppercase">nuove uscite</li>
-                    <li class="item text-uppercase">scopri</li>
-                </ul>
-            </div>
-
-
-            <div class="section_title">
-                <h2 class="text-white m-3">Recently played</h2>
+        <div class="section video  d-flex flex-column">
+            
+            <div class="section upgrade d-flex">
+                <div class="btn upg text-uppercase text-white rounded-pill">effettua l'upgrade</div>
             </div>
             
-            <div class="recenti row no-gutters">
-                <div class="card col-2 text-left text-center">
-                  <img class="card-img-top" src="./asset/img/metal_lifting.jpg" alt="">
-                  <div class="card-body">
-                    <h4 class="card-title">Heavy Metal</h4>
-                    <p class="card-text">Subtitle</p>
-                  </div>
-                </div>
 
-                <div class="card col-2 text-left text-center">
-                    <img class="card-img-top" src="./asset/img/stranger.jpeg" alt="">
-                    <div class="card-body">
-                        <h4 class="card-title">Stranger things, Vol. 1 (a Netflix Original Serie Soundtrack)</h4>
-                        <p class="card-text">Kyle Dixon & Michael Stein</p>
+            <div class="menu container text-uppercase">
+                <a class="col-lg-2 col-md-2 col-sm-4 col-5"> in evidenza</a>
+                <a class="col-lg-2 col-md-2 col-sm-4 col-5"> podcast</a>
+                <a class="col-lg-2 col-md-2 col-sm-4 col-5">classifiche</a>
+                <a class="col-lg-2 col-md-2 col-sm-4 col-5">generi e mood</a>
+                <a class="col-lg-2 col-md-2 col-sm-4 col-5">nuove uscite</a>
+                <a class="col-lg-2 col-md-2 col-sm-4 col-5">scopri</a>
+            </div>
+
+
+            
+            <div class="recenti">
+                <h2 class="text-white">Recently played</h2>
+            </div>
+            <div class="row">
+
+                <div class="cards col-6 col-sm-6 col-md-3 col-lg-2">
+                    <div class="card_img">
+                        <div class="play">
+                            <i class="far fa-play-circle"></i>
+                        </div>
+                        <img src="./asset/img/metal_lifting.jpg" alt="">
+                    </div>
+                    <div class="card_bottom">
+                        <h4>Heavy Metal </h4>
+                        <span>Subtitle</span>
                     </div>
                 </div>
 
-                <div class="card col-2 text-left text-center">
-                    <img class="card-img-top" src="./asset/img/aquietplace.jpeg" alt="">
-                    <div class="card-body">
-                        <h4 class="card-title">A quiet place</h4>
-                        <p class="card-text">Subtitle</p>
+                <div class="cards col-6 col-sm-6 col-md-3 col-lg-2">
+                    <div class="card_img">
+                        <div class="play">
+                            <i class="far fa-play-circle"></i>
+                        </div>
+                        <img src="./asset/img/stranger.jpeg" alt="">
+                    </div>
+                    <div class="card_bottom">
+                        <h4>Stranger Things, Vol. 1 (a Netflix Original Series Soundtrack)</h4>
+                        <span>Kyle Dixon & Michale Stein</span>
+                    </div>
+                </div>
+                
+                <div class="cards col-6 col-sm-6 col-md-3 col-lg-2">
+                    <div class="card_img">
+                        <div class="play">
+                            <i class="far fa-play-circle"></i>
+                        </div>
+                        <img src="./asset/img/aquietplace.jpeg" alt="">
+                    </div>
+                    <div class="card_bottom">
+                        <h4>A quiet place</h4>
+                        <span>Subtitle</span>
                     </div>
                 </div>
 
-                <div class="card col-2 text-left text-center ">
-                    <img class="card-img-top" src="./asset/img/split.jpeg" alt="">
-                    <div class="card-body">
-                        <h4 class="card-title">Split</h4>
-                        <p class="card-text">Subtitle</p>
+                <div class="cards col-6 col-sm-6 col-md-3 col-lg-2">
+                    <div class="card_img">
+                        <div class="play">
+                            <i class="far fa-play-circle"></i>
+                        </div>
+                        <img src="./asset/img/split.jpeg" alt="">
+                    </div>
+                    <div class="card_bottom">
+                        <h4>Split</h4>
+                        <span>Subtitle</span>
                     </div>
                 </div>
 
-                <div class="card col-2 text-left text-center ">
-                    <img class="card-img-top" src="./asset/img/cure.jpeg" alt="">
-                    <div class="card-body">
-                        <h4 class="card-title">A cure for wellness</h4>
-                        <p class="card-text">Subtitle</p>
+                <div class="cards col-6 col-sm-6 col-md-3 col-lg-2">
+                    <div class="card_img">
+                        <div class="play">
+                            <i class="far fa-play-circle"></i>
+                        </div>
+                        <img src="./asset/img/cure.jpeg" alt="">
+                    </div>
+                    <div class="card_bottom">
+                        <h4>A cure for wellness</h4>
+                        <span>Subtitle</span>
                     </div>
                 </div>
 
-                <div class="card col-2 text-left text-center ">
-                    <img class="card-img-top" src="./asset/img/sinister.jpeg" alt="">
-                    <div class="card-body">
-                        <h4 class="card-title">Sinister</h4>
-                        <p class="card-text">Subtitle</p>
+                <div class="cards col-6 col-sm-6 col-md-3 col-lg-2">
+                    <div class="card_img">
+                        <div class="play">
+                            <i class="far fa-play-circle"></i>
+                        </div>
+                        <img src="./asset/img/sinister.jpeg" alt="">
+                    </div>
+                    <div class="card_bottom">
+                        <h4>Sinister</h4>
+                        <span>Subtitle</span>
                     </div>
                 </div>
 
@@ -163,20 +198,32 @@
                 <span class="text-secondary">Piu ascolti, piu accurati saranno i suggerimenti.</span>
             </div>
 
-            <div class="row no-gutters">
-                <div class="card col-2 text-left text-center ">
-                    <img class="card-img-top" src="./asset/img/radar.jpeg" alt="">
-                    <div class="card-body">
-                        <h4 class="card-title">Release Radar</h4>
+            <div class="row">
+
+                <div class="cards col-6 col-sm-6 col-md-3 col-lg-2">
+                    <div class="card_img">
+                        <div class="play">
+                            <i class="far fa-play-circle"></i>
+                        </div>
+                        <img src="./asset/img/radar.jpeg" alt="">
+                    </div>
+                    <div class="card_bottom">
+                        <h4>Release Radar</h4>
                     </div>
                 </div>
 
-                <div class="card col-2 text-left text-center ">
-                    <img class="card-img-top" src="./asset/img/mixdaily.jpeg" alt="">
-                    <div class="card-body">
-                        <h4 class="card-title">Dally Mix 1</h4>
+                <div class="cards col-6 col-sm-6 col-md-3 col-lg-2">
+                    <div class="card_img">
+                        <div class="play">
+                            <i class="far fa-play-circle"></i>
+                        </div>
+                        <img src="./asset/img/mixdaily.jpeg" alt="">
+                    </div>
+                    <div class="card_bottom">
+                        <h4>Dally Mix 1</h4>
                     </div>
                 </div>
+
             </div>
 
             <div class="popolari">
@@ -184,18 +231,29 @@
                 <span class="text-secondary">Piu ascolti, piu accurati saranno i suggerimenti.</span>
             </div>
 
-            <div class="row no-gutters">
-                <div class="card col-2 text-left text-center ">
-                    <img class="card-img-top rounded-circle" src="./asset/img/youg.jpeg" alt="">
-                    <div class="card-body">
-                        <h4 class="card-title">Lana del Rey</h4>
+            <div class="row tondo">
+
+                <div class="cards col-6 col-sm-6 col-md-3 col-lg-2">
+                    <div class="card_img">
+                        <div class="play">
+                            <i class="far fa-play-circle"></i>
+                        </div>
+                        <img src="./asset/img/youg.jpeg" alt="">
+                    </div>
+                    <div class="card_bottom">
+                        <h4>Lana del Rey</h4>
                     </div>
                 </div>
 
-                <div class="card col-2 text-left text-center ">
-                    <img class="card-img-top rounded-circle" src="./asset/img/einaudi.jpeg" alt="">
-                    <div class="card-body">
-                        <h4 class="card-title">Ludovico Einaudi</h4>
+                <div class="cards col-6 col-sm-6 col-md-3 col-lg-2">
+                    <div class="card_img">
+                        <div class="play">
+                            <i class="far fa-play-circle"></i>
+                        </div>
+                        <img src="./asset/img/einaudi.jpeg" alt="">
+                    </div>
+                    <div class="card_bottom">
+                        <h4>Ludovico Einaudi</h4>
                     </div>
                 </div>
 
@@ -209,15 +267,54 @@
     <footer>
         <!-- controll -->
         <section class="controll d-flex">
+
             <div class="controll_left d-flex align-items-center col-4 text-white">
                 <img src="./asset/img/sinister.jpeg" alt="">
                 <div class="d-flex flex-column">
                     <h5>Sinister</h5>
                     <span>Brano Nome</span>
                 </div>
+                <div class="cartella">
+                    <i class="far fa-heart"></i>
+                    <i class="far fa-folder"></i>
+                </div>
             </div>
-            <div class="controll_center col-4"></div>
-            <div class="controll_right col-4"></div>
+
+            <div class="controll_center d-flex text-white row col-4">
+
+                <i class="contr_small fas fa-random"></i>
+                <i class="contr_medium fas fa-caret-left"></i>
+                <i class="contr_big far fa-play-circle"></i>
+                <i class="contr_medium fas fa-caret-right"></i>
+                <i class="contr_small fas fa-redo"></i>
+                
+
+                    <div class="tempo">0:25</div>
+                    <div class="barra">
+                        <div class="progresso">
+                            <div class="cursore d-flex"> 
+                                <div class="pallino"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tempo">4:35</div>
+
+            </div>
+
+            <div class="controll_right d-flex col-4">
+
+                <i class="contr_small fas fa-list text-white"></i>
+                <i class="contr_small fas fa-tv text-white"></i>
+                <i class="contr_small fas fa-volume-up text-white"></i>
+                <div class="barra">
+                    <div class="progresso">
+                        <div class="cursore d-flex">
+                            <div class="pallino"></div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
         </section>
         <!-- /controll -->
     </footer>
