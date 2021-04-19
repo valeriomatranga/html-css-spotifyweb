@@ -33,6 +33,7 @@
     float:left;
     margin-bottom: 100px;
     padding-top: 120px;
+    padding-right: 0;
     overflow-y: auto;
     overflow-x: hidden;
 
@@ -239,6 +240,9 @@
 
 
 /************** video ************/
+.container-fluid{
+    padding-left: 0;
+}
 .menu{
     text-align: center;
 }
@@ -247,6 +251,7 @@
     color: gray;
     font-size: 1rem;
     font-weight: 500;
+    padding: 5px;
 }
 
 .menu a:hover{
@@ -255,18 +260,22 @@
     cursor: pointer;
 }
 
-.linea-verde{
+.menu a:first-child::after{
+    content: "";
     width: 40px;
-    border: 1px solid rgba(173, 255, 47, 1);
-    position: absolute;
-    bottom: 0;
-    left: 47px;
+    display: block;
+    margin: auto;
+    border-bottom: 1px solid rgba(173, 255, 47, 1);
 }
 
 .consigliati,
 .popolari,
 .recenti{
-    margin:15px 25px;
+    margin:15px 10px;
+}
+
+.video span{
+    font-weight: 600;
 }
 
 .row{
@@ -358,6 +367,10 @@
         padding-left: 5px;
         padding-right: 5px;
     }
+    .menu a{
+        font-size: 0.8rem;
+    }
+
 }
 
 @media screen and (min-width:576px) and (max-width:767px) {
@@ -385,6 +398,12 @@
         margin-bottom: 5px;
     }
 
+}
+
+@media screen and (min-width:768px) and (max-width:991px) {
+    .video h2{
+        font-size: 1.5rem;
+    }
 }
 
 
@@ -523,17 +542,19 @@
     cursor: pointer;
 }
 
+.controll_left,
+.controll_center,
+.controll_right{
+    padding: 5px;
+}
+
+
 @media screen and (max-width:575px) {
     .barra{
         width: 100px;
     }
     .progresso{
         width: 20px;
-    }
-    .controll_left,
-    .controll_center,
-    .controll_right{
-        padding: 5px;
     }
     .tempo{
         padding:0 10px;
@@ -547,11 +568,6 @@
 }
 
 @media screen and (min-width:576px) and (max-width:767px) {
-    .controll_left,
-    .controll_center,
-    .controll_right{
-        padding: 5px;
-    }
 
     .contr_small{
         width: 35px;
@@ -567,6 +583,27 @@
     }
     .barra{
         width: 125px;
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:991px) {
+    
+    .barra{
+        width: 75%;
+    }
+    .tempo{
+        padding: 0 5px;
+    }
+}
+
+@media screen and (min-width:992px){
+    
+    .tempo{
+        padding: 0 5px;
+    }
+
+    .barra{
+        width: 80%;
     }
 }
 /* /controll center */
