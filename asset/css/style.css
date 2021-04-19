@@ -7,7 +7,7 @@
 
  .upgrade{
     height: 100px;
-    width: calc(100% - 250px);
+    width: calc(100% - 200px);
     justify-content: flex-end;
     align-items: center;
     padding: 0px 25px;
@@ -20,7 +20,7 @@
 .nav{
     background-color: rgb(0, 0, 0);
     height: calc(100vh - 100px);
-    width: 250px;
+    width: 200px;
     flex-wrap: nowrap;
     position: relative;
    
@@ -29,7 +29,7 @@
 .video{
     background-color: rgb(20, 25, 34);
     height: calc(100vh - 100px);
-    width: calc(100% - 250px);
+    width: calc(100% - 200px);
     float:left;
     margin-bottom: 100px;
     padding-top: 120px;
@@ -45,6 +45,7 @@
     width: 100%;
     position: fixed;
     bottom: 0;
+    z-index: 1;
 }
 /*************** /struttura **************/
 
@@ -81,7 +82,7 @@
     width: 35px;
     height: 35px;
     background-color: rgba(193, 193, 193, 1);  
-    margin: 10px 10px 10px 0;  
+    margin: 10px 0px 10px 0;  
 }
 
 
@@ -211,6 +212,7 @@
     .upgrade{
     width: calc(100% - 60px);
     padding: 0px 5px;
+    height: 80px;
     }
 
     .btn{
@@ -243,15 +245,23 @@
 .container-fluid{
     padding-left: 0;
 }
+
+.container{
+    padding: 0;
+}
+
 .menu{
-    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
 }
 
 .menu a{
     color: gray;
     font-size: 1rem;
     font-weight: 500;
-    padding: 5px;
+    padding: 20px;
 }
 
 .menu a:hover{
@@ -262,16 +272,16 @@
 
 .menu a:first-child::after{
     content: "";
-    width: 40px;
+    width: 35px;
     display: block;
     margin: auto;
-    border-bottom: 1px solid rgba(173, 255, 47, 1);
+    border-bottom: 2px solid rgba(173, 255, 47, 1);
 }
 
 .consigliati,
 .popolari,
 .recenti{
-    margin:15px 10px;
+    margin:25px 10px;
 }
 
 .video span{
@@ -284,8 +294,8 @@
 
 .cards{
     width: 250px;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
     cursor: pointer;
     margin-bottom: 30px;
 }
@@ -371,6 +381,10 @@
         font-size: 0.8rem;
     }
 
+    .video{
+        padding-top: 100px;
+    }
+
 }
 
 @media screen and (min-width:576px) and (max-width:767px) {
@@ -398,6 +412,10 @@
         margin-bottom: 5px;
     }
 
+    .video{
+        padding-top: 100px;
+    }
+
 }
 
 @media screen and (min-width:768px) and (max-width:991px) {
@@ -416,14 +434,17 @@
 /* controll left */
 .controll img{
     width: 50px;
-    margin: 20px 10px 20px 0px;
+    margin: 20px 10px 20px 5px;
 }
 
 .controll h5{
     margin: 0px;
+    font-size: 1rem;
 }
 .controll span{
     color: gray;
+    font-size: 0.8rem;
+    font-weight: 600;
 }
 
 .cartella{
@@ -450,7 +471,7 @@
 
 .row{
     padding: 0px;
-    margin: 0px;
+    margin: 0px 10px;
 }
 
 
@@ -565,6 +586,20 @@
     .controll_center .contr_small{
         font-size: 1.1rem;
     }
+    .controll img{
+    width: 40px;
+    margin: 20px 10px 20px 0px;
+    }
+    .controll h5{
+        margin: 0px;
+        font-size: 0.8rem;
+    }
+    .controll span{
+        color: gray;
+        font-size: 0.7rem;
+        font-weight: 600;
+    }
+
 }
 
 @media screen and (min-width:576px) and (max-width:767px) {
@@ -641,5 +676,11 @@
         width: 30px;
     }
     
+}
+
+@media screen and (min-width:576px) and (max-width:768px) {
+    .controll_right>.barra{
+        width: 40%;
+    }
 }
 /* /controll right */
