@@ -1,6 +1,6 @@
 //writeln
-document.writeln("inizio JS");
-
+/* document.writeln("inizio JS");
+ */
 //alert
 alert("Puo provocare dipendenza");
 
